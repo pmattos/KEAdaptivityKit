@@ -379,6 +379,7 @@
 		5E5DCC802132D51E00F97E90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -393,10 +394,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "$(SRCROOT)/Resources/KELayoutKit.h";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KELayoutKit-iOS";
 				PRODUCT_NAME = KELayoutKit;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -405,6 +406,7 @@
 		5E5DCC812132D51E00F97E90 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -419,7 +421,6 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "$(SRCROOT)/Resources/KELayoutKit.h";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KELayoutKit-iOS";
 				PRODUCT_NAME = KELayoutKit;
 				SKIP_INSTALL = YES;
@@ -431,6 +432,7 @@
 		5E5DCC8E2132D57900F97E90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -445,11 +447,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "$(SRCROOT)/Resources/KELayoutKit.h";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KELayoutKit-tvOS";
 				PRODUCT_NAME = KEFoundation;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 11.4;
@@ -459,6 +461,7 @@
 		5E5DCC8F2132D57900F97E90 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -473,7 +476,6 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "$(SRCROOT)/Resources/KELayoutKit.h";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KELayoutKit-tvOS";
 				PRODUCT_NAME = KEFoundation;
 				SDKROOT = appletvos;
@@ -487,6 +489,7 @@
 		5E5DCC9B2132D58800F97E90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -504,11 +507,11 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "$(SRCROOT)/Resources/KELayoutKit.h";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KELayoutKit-macOS";
 				PRODUCT_NAME = KEFoundation;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -516,6 +519,7 @@
 		5E5DCC9C2132D58800F97E90 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -533,7 +537,6 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "$(SRCROOT)/Resources/KELayoutKit.h";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaiengelhardt.KELayoutKit-macOS";
 				PRODUCT_NAME = KEFoundation;
 				SDKROOT = macosx;
