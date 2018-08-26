@@ -10,6 +10,43 @@
 		5E5DCC7C2132D51E00F97E90 /* KELayoutKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E5DCC7A2132D51E00F97E90 /* KELayoutKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E5DCC9D2132D5CE00F97E90 /* KELayoutKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E5DCC7A2132D51E00F97E90 /* KELayoutKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E5DCC9E2132D5CF00F97E90 /* KELayoutKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E5DCC7A2132D51E00F97E90 /* KELayoutKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E5DCCAC2132DCC900F97E90 /* AdaptiveInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCAB2132DCC900F97E90 /* AdaptiveInterface.swift */; };
+		5E5DCCAD2132DCC900F97E90 /* AdaptiveInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCAB2132DCC900F97E90 /* AdaptiveInterface.swift */; };
+		5E5DCCAE2132DCC900F97E90 /* AdaptiveInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCAB2132DCC900F97E90 /* AdaptiveInterface.swift */; };
+		5E5DCCB32132DEC900F97E90 /* TraitCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCB22132DEC900F97E90 /* TraitCondition.swift */; };
+		5E5DCCB42132DEC900F97E90 /* TraitCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCB22132DEC900F97E90 /* TraitCondition.swift */; };
+		5E5DCCB72132DED200F97E90 /* SizeCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCB62132DED200F97E90 /* SizeCondition.swift */; };
+		5E5DCCB82132DED200F97E90 /* SizeCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCB62132DED200F97E90 /* SizeCondition.swift */; };
+		5E5DCCB92132DED200F97E90 /* SizeCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCB62132DED200F97E90 /* SizeCondition.swift */; };
+		5E5DCCBB2132EF7900F97E90 /* SizeAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCBA2132EF7900F97E90 /* SizeAttribute.swift */; };
+		5E5DCCBC2132EF7900F97E90 /* SizeAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCBA2132EF7900F97E90 /* SizeAttribute.swift */; };
+		5E5DCCBD2132EF7900F97E90 /* SizeAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCBA2132EF7900F97E90 /* SizeAttribute.swift */; };
+		5E5DCCBF2132F42D00F97E90 /* TraitAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCBE2132F42D00F97E90 /* TraitAttribute.swift */; };
+		5E5DCCC02132F42D00F97E90 /* TraitAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCBE2132F42D00F97E90 /* TraitAttribute.swift */; };
+		5E5DCCC32132F50E00F97E90 /* SizeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCC22132F50E00F97E90 /* SizeClass.swift */; };
+		5E5DCCC42132F50E00F97E90 /* SizeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCC22132F50E00F97E90 /* SizeClass.swift */; };
+		5E5DCCC62132F60600F97E90 /* Idiom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCC52132F60600F97E90 /* Idiom.swift */; };
+		5E5DCCC72132F60600F97E90 /* Idiom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCC52132F60600F97E90 /* Idiom.swift */; };
+		5E5DCCCB2132F9DD00F97E90 /* DisplayGamut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCCA2132F9DD00F97E90 /* DisplayGamut.swift */; };
+		5E5DCCCC2132F9DD00F97E90 /* DisplayGamut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCCA2132F9DD00F97E90 /* DisplayGamut.swift */; };
+		5E5DCCCE2132FA5500F97E90 /* ForceTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCCD2132FA5500F97E90 /* ForceTouch.swift */; };
+		5E5DCCCF2132FA5500F97E90 /* ForceTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCCD2132FA5500F97E90 /* ForceTouch.swift */; };
+		5E5DCCD12132FAA000F97E90 /* LayoutDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCD02132FAA000F97E90 /* LayoutDirection.swift */; };
+		5E5DCCD22132FAA000F97E90 /* LayoutDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCD02132FAA000F97E90 /* LayoutDirection.swift */; };
+		5E5DCCD42132FAE800F97E90 /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCD32132FAE800F97E90 /* Scale.swift */; };
+		5E5DCCD52132FAE800F97E90 /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCD32132FAE800F97E90 /* Scale.swift */; };
+		5E5DCCD72132FB6D00F97E90 /* SizeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCD62132FB6D00F97E90 /* SizeCategory.swift */; };
+		5E5DCCD82132FB6D00F97E90 /* SizeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCD62132FB6D00F97E90 /* SizeCategory.swift */; };
+		5E5DCCDD21330CD700F97E90 /* TraitAdaptiveConstraintContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCDC21330CD700F97E90 /* TraitAdaptiveConstraintContainer.swift */; };
+		5E5DCCDE21330CD700F97E90 /* TraitAdaptiveConstraintContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCDC21330CD700F97E90 /* TraitAdaptiveConstraintContainer.swift */; };
+		5E5DCCEB213314A900F97E90 /* SizeAdaptiveConstraintContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCEA213314A900F97E90 /* SizeAdaptiveConstraintContainer.swift */; };
+		5E5DCCEC213314A900F97E90 /* SizeAdaptiveConstraintContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCEA213314A900F97E90 /* SizeAdaptiveConstraintContainer.swift */; };
+		5E5DCCED213314A900F97E90 /* SizeAdaptiveConstraintContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCEA213314A900F97E90 /* SizeAdaptiveConstraintContainer.swift */; };
+		5E5DCCEF21331A6400F97E90 /* TraitAdaptiveElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCEE21331A6400F97E90 /* TraitAdaptiveElement.swift */; };
+		5E5DCCF021331A6400F97E90 /* TraitAdaptiveElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCEE21331A6400F97E90 /* TraitAdaptiveElement.swift */; };
+		5E5DCCF321331D6300F97E90 /* SizeAdaptiveElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCF221331D6300F97E90 /* SizeAdaptiveElement.swift */; };
+		5E5DCCF421331D6300F97E90 /* SizeAdaptiveElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCF221331D6300F97E90 /* SizeAdaptiveElement.swift */; };
+		5E5DCCF521331D6300F97E90 /* SizeAdaptiveElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCF221331D6300F97E90 /* SizeAdaptiveElement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +57,22 @@
 		5E5DCC8B2132D57900F97E90 /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		5E5DCC952132D58800F97E90 /* KEFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KEFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E5DCC982132D58800F97E90 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
+		5E5DCCAB2132DCC900F97E90 /* AdaptiveInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveInterface.swift; sourceTree = "<group>"; };
+		5E5DCCB22132DEC900F97E90 /* TraitCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitCondition.swift; sourceTree = "<group>"; };
+		5E5DCCB62132DED200F97E90 /* SizeCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeCondition.swift; sourceTree = "<group>"; };
+		5E5DCCBA2132EF7900F97E90 /* SizeAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeAttribute.swift; sourceTree = "<group>"; };
+		5E5DCCBE2132F42D00F97E90 /* TraitAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitAttribute.swift; sourceTree = "<group>"; };
+		5E5DCCC22132F50E00F97E90 /* SizeClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeClass.swift; sourceTree = "<group>"; };
+		5E5DCCC52132F60600F97E90 /* Idiom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idiom.swift; sourceTree = "<group>"; };
+		5E5DCCCA2132F9DD00F97E90 /* DisplayGamut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayGamut.swift; sourceTree = "<group>"; };
+		5E5DCCCD2132FA5500F97E90 /* ForceTouch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceTouch.swift; sourceTree = "<group>"; };
+		5E5DCCD02132FAA000F97E90 /* LayoutDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutDirection.swift; sourceTree = "<group>"; };
+		5E5DCCD32132FAE800F97E90 /* Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scale.swift; sourceTree = "<group>"; };
+		5E5DCCD62132FB6D00F97E90 /* SizeCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeCategory.swift; sourceTree = "<group>"; };
+		5E5DCCDC21330CD700F97E90 /* TraitAdaptiveConstraintContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitAdaptiveConstraintContainer.swift; sourceTree = "<group>"; };
+		5E5DCCEA213314A900F97E90 /* SizeAdaptiveConstraintContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeAdaptiveConstraintContainer.swift; sourceTree = "<group>"; };
+		5E5DCCEE21331A6400F97E90 /* TraitAdaptiveElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitAdaptiveElement.swift; sourceTree = "<group>"; };
+		5E5DCCF221331D6300F97E90 /* SizeAdaptiveElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeAdaptiveElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +133,64 @@
 		5E5DCC822132D52B00F97E90 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				5E5DCCAB2132DCC900F97E90 /* AdaptiveInterface.swift */,
+				5E5DCCAF2132DD1600F97E90 /* Adaptive Elements */,
+				5E5DCCB02132DD1C00F97E90 /* Attributes */,
+				5E5DCCB12132DD2400F97E90 /* Condition */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		5E5DCCAF2132DD1600F97E90 /* Adaptive Elements */ = {
+			isa = PBXGroup;
+			children = (
+				5E5DCCEE21331A6400F97E90 /* TraitAdaptiveElement.swift */,
+				5E5DCCF221331D6300F97E90 /* SizeAdaptiveElement.swift */,
+				5E5DCCDC21330CD700F97E90 /* TraitAdaptiveConstraintContainer.swift */,
+				5E5DCCEA213314A900F97E90 /* SizeAdaptiveConstraintContainer.swift */,
+			);
+			path = "Adaptive Elements";
+			sourceTree = "<group>";
+		};
+		5E5DCCB02132DD1C00F97E90 /* Attributes */ = {
+			isa = PBXGroup;
+			children = (
+				5E5DCCC82132F9AA00F97E90 /* Trait Atrributes */,
+				5E5DCCC92132F9B500F97E90 /* Size Attributes */,
+			);
+			path = Attributes;
+			sourceTree = "<group>";
+		};
+		5E5DCCB12132DD2400F97E90 /* Condition */ = {
+			isa = PBXGroup;
+			children = (
+				5E5DCCB22132DEC900F97E90 /* TraitCondition.swift */,
+				5E5DCCB62132DED200F97E90 /* SizeCondition.swift */,
+			);
+			path = Condition;
+			sourceTree = "<group>";
+		};
+		5E5DCCC82132F9AA00F97E90 /* Trait Atrributes */ = {
+			isa = PBXGroup;
+			children = (
+				5E5DCCBE2132F42D00F97E90 /* TraitAttribute.swift */,
+				5E5DCCC22132F50E00F97E90 /* SizeClass.swift */,
+				5E5DCCC52132F60600F97E90 /* Idiom.swift */,
+				5E5DCCCA2132F9DD00F97E90 /* DisplayGamut.swift */,
+				5E5DCCCD2132FA5500F97E90 /* ForceTouch.swift */,
+				5E5DCCD02132FAA000F97E90 /* LayoutDirection.swift */,
+				5E5DCCD32132FAE800F97E90 /* Scale.swift */,
+				5E5DCCD62132FB6D00F97E90 /* SizeCategory.swift */,
+			);
+			path = "Trait Atrributes";
+			sourceTree = "<group>";
+		};
+		5E5DCCC92132F9B500F97E90 /* Size Attributes */ = {
+			isa = PBXGroup;
+			children = (
+				5E5DCCBA2132EF7900F97E90 /* SizeAttribute.swift */,
+			);
+			path = "Size Attributes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,12 +288,15 @@
 				TargetAttributes = {
 					5E5DCC762132D51E00F97E90 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					5E5DCC872132D57900F97E90 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					5E5DCC942132D58800F97E90 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -236,6 +348,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E5DCCCE2132FA5500F97E90 /* ForceTouch.swift in Sources */,
+				5E5DCCDD21330CD700F97E90 /* TraitAdaptiveConstraintContainer.swift in Sources */,
+				5E5DCCEB213314A900F97E90 /* SizeAdaptiveConstraintContainer.swift in Sources */,
+				5E5DCCC32132F50E00F97E90 /* SizeClass.swift in Sources */,
+				5E5DCCC62132F60600F97E90 /* Idiom.swift in Sources */,
+				5E5DCCD42132FAE800F97E90 /* Scale.swift in Sources */,
+				5E5DCCF321331D6300F97E90 /* SizeAdaptiveElement.swift in Sources */,
+				5E5DCCBB2132EF7900F97E90 /* SizeAttribute.swift in Sources */,
+				5E5DCCBF2132F42D00F97E90 /* TraitAttribute.swift in Sources */,
+				5E5DCCAC2132DCC900F97E90 /* AdaptiveInterface.swift in Sources */,
+				5E5DCCB32132DEC900F97E90 /* TraitCondition.swift in Sources */,
+				5E5DCCCB2132F9DD00F97E90 /* DisplayGamut.swift in Sources */,
+				5E5DCCD72132FB6D00F97E90 /* SizeCategory.swift in Sources */,
+				5E5DCCD12132FAA000F97E90 /* LayoutDirection.swift in Sources */,
+				5E5DCCB72132DED200F97E90 /* SizeCondition.swift in Sources */,
+				5E5DCCEF21331A6400F97E90 /* TraitAdaptiveElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +371,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E5DCCCF2132FA5500F97E90 /* ForceTouch.swift in Sources */,
+				5E5DCCDE21330CD700F97E90 /* TraitAdaptiveConstraintContainer.swift in Sources */,
+				5E5DCCEC213314A900F97E90 /* SizeAdaptiveConstraintContainer.swift in Sources */,
+				5E5DCCC42132F50E00F97E90 /* SizeClass.swift in Sources */,
+				5E5DCCC72132F60600F97E90 /* Idiom.swift in Sources */,
+				5E5DCCD52132FAE800F97E90 /* Scale.swift in Sources */,
+				5E5DCCF421331D6300F97E90 /* SizeAdaptiveElement.swift in Sources */,
+				5E5DCCBC2132EF7900F97E90 /* SizeAttribute.swift in Sources */,
+				5E5DCCC02132F42D00F97E90 /* TraitAttribute.swift in Sources */,
+				5E5DCCAD2132DCC900F97E90 /* AdaptiveInterface.swift in Sources */,
+				5E5DCCB42132DEC900F97E90 /* TraitCondition.swift in Sources */,
+				5E5DCCCC2132F9DD00F97E90 /* DisplayGamut.swift in Sources */,
+				5E5DCCD82132FB6D00F97E90 /* SizeCategory.swift in Sources */,
+				5E5DCCD22132FAA000F97E90 /* LayoutDirection.swift in Sources */,
+				5E5DCCB82132DED200F97E90 /* SizeCondition.swift in Sources */,
+				5E5DCCF021331A6400F97E90 /* TraitAdaptiveElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +394,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E5DCCED213314A900F97E90 /* SizeAdaptiveConstraintContainer.swift in Sources */,
+				5E5DCCAE2132DCC900F97E90 /* AdaptiveInterface.swift in Sources */,
+				5E5DCCB92132DED200F97E90 /* SizeCondition.swift in Sources */,
+				5E5DCCF521331D6300F97E90 /* SizeAdaptiveElement.swift in Sources */,
+				5E5DCCBD2132EF7900F97E90 /* SizeAttribute.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
