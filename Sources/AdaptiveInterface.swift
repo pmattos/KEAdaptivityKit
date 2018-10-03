@@ -57,10 +57,18 @@ public extension AdaptiveInterface {
 
 public extension AdaptiveInterface {
 	
-	public func when(_ attributes: [AdaptiveAttribute], apply constraints: [NSLayoutConstraint]) {
+	public func when(_ attribute: AdaptiveAttribute, activateConstraints constraints: [NSLayoutConstraint]) {
+		when([attribute], activateConstraints: constraints)
+	}
+	
+	public func when(_ attributes: [AdaptiveAttribute], activateConstraints constraints: [NSLayoutConstraint]) {
 		let condition = CompoundCondition.init(conditions: attributes.map { $0.generateCondition() })
 		let element = AdaptiveConstraintContainer.init(conditions: [condition], constraints: constraints)
 		adaptiveElements.append(element)
+	}
+	
+	public func when(_ attribute: AdaptiveAttribute, do behavior: @escaping AdaptiveBehavior.Behavior, otherwise counterBehavior: AdaptiveBehavior.Behavior? = nil) {
+		when([attribute], do: behavior, otherwise: counterBehavior)
 	}
 	
 	public func when(_ attributes: [AdaptiveAttribute], do behavior: @escaping AdaptiveBehavior.Behavior, otherwise counterBehavior: AdaptiveBehavior.Behavior? = nil) {
