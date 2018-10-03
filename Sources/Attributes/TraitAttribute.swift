@@ -3,12 +3,12 @@
 //  KEAdaptivityKit
 //
 //  Created by Kai Engelhardt on 03.10.18
-//  Copyright © 2018 Kai Engelhardt. All rights reserved.
+//  Copyright © 2018 Kai Engelhardt (https://github.com/kaiengelhardt)
 //
 //  Distributed under the permissive MIT license
 //  Get the latest version from here:
 //
-//  https://github.com/kaiengelhardt/KELayoutKit
+//  https://github.com/kaiengelhardt/KEAdaptivityKit
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
