@@ -34,7 +34,7 @@ import KELayoutKit
 
 class ViewController: NSViewController, AdaptiveInterface {
 	
-	var sizeAdaptiveElements: [SizeAdaptiveElement] = []
+	var adaptiveElements: [AdaptiveElement] = []
 	
 	let button: NSButton
 	
@@ -62,12 +62,12 @@ class ViewController: NSViewController, AdaptiveInterface {
 			button.centerYAnchor.constraint(equalTo: view.centerYAnchor),
 			])
 		
-		when(size: [.width > 400, .height > 300], apply: [
+		when([.width > 400, .height > 300], apply: [
 			button.widthAnchor.constraint(equalToConstant: 180),
-			])
-		when(size: [.width <= 400, .height <= 400], apply: [
+		])
+		when([.width <= 400, .height <= 400], apply: [
 			button.widthAnchor.constraint(equalToConstant: 60),
-			])
+		])
 	}
 	
 	override func loadView() {
@@ -76,7 +76,7 @@ class ViewController: NSViewController, AdaptiveInterface {
 	
 	override func viewDidLayout() {
 		super.viewDidLayout()
-		update(with: view.bounds.size)
+		update(with: self)
 	}
 	
 }
