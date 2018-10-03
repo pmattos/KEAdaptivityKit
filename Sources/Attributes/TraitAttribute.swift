@@ -1,8 +1,8 @@
 //
-//  Scale.swift
+//  TraitAttribute.swift
 //  KELayoutKit
 //
-//  Created by Kai Engelhardt on 26.08.18
+//  Created by Kai Engelhardt on 03.10.18
 //  Copyright © 2018 Kai Engelhardt. All rights reserved.
 //
 //  Distributed under the permissive MIT license
@@ -31,24 +31,16 @@
 
 import UIKit
 
-public enum Scale: TraitAttribute {
+public protocol TraitAttribute: AdaptiveAttribute {
 	
-	case oneX
-	case twoX
-	case threeX
-	case fourX
+	var traitCollection: UITraitCollection { get }
 	
-	public func generateCondition() -> TraitCondition {
-		switch self {
-		case .oneX:
-			return TraitCondition(traitCollection: UITraitCollection(displayScale: 1.0))
-		case .twoX:
-			return TraitCondition(traitCollection: UITraitCollection(displayScale: 2.0))
-		case .threeX:
-			return TraitCondition(traitCollection: UITraitCollection(displayScale: 3.0))
-		case .fourX:
-			return TraitCondition(traitCollection: UITraitCollection(displayScale: 4.0))
-		}
+}
+
+public extension TraitAttribute {
+	
+	public func generateCondition() -> AdaptiveCondition {
+		return TraitCondition(traitCollection: traitCollection)
 	}
 	
 }

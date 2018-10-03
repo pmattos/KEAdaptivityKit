@@ -1,5 +1,5 @@
 //
-//  TraitAdaptiveElement.swift
+//  DisplayGamut.swift
 //  KELayoutKit
 //
 //  Created by Kai Engelhardt on 26.08.18
@@ -31,10 +31,18 @@
 
 import UIKit
 
-public protocol TraitAdaptiveElement {
+public enum DisplayGamut: TraitAttribute {
 	
-	var condition: TraitCondition { get }
+	case SRGB
+	case P3
 	
-	func update(with newTraitCollection: UITraitCollection)
+	public var traitCollection: UITraitCollection {
+		switch self {
+		case .SRGB:
+			return UITraitCollection(displayGamut: .SRGB)
+		case .P3:
+			return UITraitCollection(displayGamut: .P3)
+		}
+	}
 	
 }

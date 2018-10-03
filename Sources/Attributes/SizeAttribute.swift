@@ -1,14 +1,14 @@
 //
-//  TraitCondition.swift
+//  SizeAttribute.swift
 //  KELayoutKit
 //
-//  Created by Kai Engelhardt on 26.08.18
+//  Created by Kai Engelhardt on 25.08.18
 //  Copyright © 2018 Kai Engelhardt. All rights reserved.
 //
 //  Distributed under the permissive MIT license
 //  Get the latest version from here:
 //
-//  https://github.com/kaiengelhardt/KELayoutKit
+//  https://github.com/kaiengelhardt/KEFoundation
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -29,23 +29,53 @@
 //  SOFTWARE.
 //
 
-import UIKit
+import CoreGraphics
 
-public struct TraitCondition: AdaptiveCondition {
+public enum SizeAttribute: AdaptiveAttribute {
 	
-	public let traitCollection: UITraitCollection
-	
-	public init(traitAttributes: [TraitAttribute]) {
-		let traitCollections = traitAttributes.map { $0.traitCollection }
-		traitCollection = UITraitCollection(traitsFrom: traitCollections)
+	public enum Component {
+		
+		case width
+		case height
+		
 	}
 	
-	public init(traitCollection: UITraitCollection) {
-		self.traitCollection = traitCollection
+	case lessThan(Component, CGFloat)
+	case lessThanOrEqualTo(Component, CGFloat)
+	case equalTo(Component, CGFloat)
+	case greaterThanOrEqualTo(Component, CGFloat)
+	case greaterThan(Component, CGFloat)
+	
+	public func generateCondition() -> AdaptiveCondition {
+		return SizeCondition(sizeAttributeCollection: [self])
 	}
 	
-	public func evaluate(with dataSource: AdaptiveElementDataSource) -> Bool {
-		return dataSource.traitCollection.containsTraits(in: traitCollection)
+}
+
+extension Array where Element == SizeAttribute {
+	
+	public func generateCondition() -> SizeCondition {
+		return SizeCondition(sizeAttributeCollection: self)
 	}
 	
+}
+
+public func < (lhs: SizeAttribute.Component, rhs: CGFloat) -> SizeAttribute {
+	return .lessThan(lhs, rhs)
+}
+
+public func <= (lhs: SizeAttribute.Component, rhs: CGFloat) -> SizeAttribute {
+	return .lessThanOrEqualTo(lhs, rhs)
+}
+
+public func == (lhs: SizeAttribute.Component, rhs: CGFloat) -> SizeAttribute {
+	return .equalTo(lhs, rhs)
+}
+
+public func >= (lhs: SizeAttribute.Component, rhs: CGFloat) -> SizeAttribute {
+	return .greaterThanOrEqualTo(lhs, rhs)
+}
+
+public func > (lhs: SizeAttribute.Component, rhs: CGFloat) -> SizeAttribute {
+	return .greaterThan(lhs, rhs)
 }

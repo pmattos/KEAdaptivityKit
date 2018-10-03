@@ -1,8 +1,8 @@
 //
-//  SizeAdaptiveConstraintContainer.swift
+//  AdaptiveElement.swift
 //  KELayoutKit
 //
-//  Created by Kai Engelhardt on 26.08.18
+//  Created by Kai Engelhardt on 03.10.18
 //  Copyright © 2018 Kai Engelhardt. All rights reserved.
 //
 //  Distributed under the permissive MIT license
@@ -29,27 +29,10 @@
 //  SOFTWARE.
 //
 
-#if canImport(UIKit)
+import Foundation
 
-import UIKit
-
-#elseif canImport(AppKit)
-
-import AppKit
-
-#endif
-
-public struct SizeAdaptiveConstraintContainer: SizeAdaptiveElement {
-	
-	public let condition: SizeCondition
-	public let constraints: [NSLayoutConstraint]
-	
-	public func update(with newSize: CGSize) {
-		if condition.evaluate(with: newSize) {
-			NSLayoutConstraint.activate(constraints)
-		} else {
-			NSLayoutConstraint.deactivate(constraints)
-		}
-	}
+public protocol AdaptiveElement {
+		
+	mutating func update(with dataSource: AdaptiveElementDataSource)
 	
 }

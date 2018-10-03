@@ -1,5 +1,5 @@
 //
-//  TraitAttribute.swift
+//  AdaptiveAttribute.swift
 //  KELayoutKit
 //
 //  Created by Kai Engelhardt on 26.08.18
@@ -27,20 +27,20 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
-//AdaptiveAttribute
+//
+
+#if canImport(UIKit)
 
 import UIKit
 
-public protocol TraitAttribute {
+#elseif canImport(AppKit)
 
-	func generateCondition() -> TraitCondition
-	
-}
+import AppKit
 
-extension Array where Element == TraitAttribute {
+#endif
+
+public protocol AdaptiveAttribute {
 	
-	public func generateCondition() -> TraitCondition {
-		return TraitCondition(traitAttributes: self)
-	}
+	func generateCondition() -> AdaptiveCondition
 	
 }

@@ -1,5 +1,5 @@
 //
-//  SizeAdaptiveElement.swift
+//  SizeClass.swift
 //  KELayoutKit
 //
 //  Created by Kai Engelhardt on 26.08.18
@@ -29,12 +29,26 @@
 //  SOFTWARE.
 //
 
-import CoreGraphics
+import UIKit
 
-public protocol SizeAdaptiveElement {
+public enum SizeClass: TraitAttribute {
 	
-	var condition: SizeCondition { get }
+	case horizontalCompact
+	case horizontalRegular
+	case verticalCompact
+	case verticalRegular
 	
-	func update(with newSize: CGSize)
+	public var traitCollection: UITraitCollection {
+		switch self {
+		case .horizontalCompact:
+			return UITraitCollection(horizontalSizeClass: .compact)
+		case .horizontalRegular:
+			return UITraitCollection(horizontalSizeClass: .regular)
+		case .verticalCompact:
+			return UITraitCollection(verticalSizeClass: .compact)
+		case .verticalRegular:
+			return UITraitCollection(verticalSizeClass: .regular)
+		}
+	}
 	
 }

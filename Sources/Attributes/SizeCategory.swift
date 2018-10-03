@@ -46,32 +46,32 @@ public enum SizeCategory: TraitAttribute {
 	case accessibilityExtraExtraLarge
 	case accessibilityExtraExtraExtraLarge
 	
-	public func generateCondition() -> TraitCondition {
+	public var traitCollection: UITraitCollection {
 		switch self {
 		case .extraSmall:
-			return TraitCondition(traitCollection: UITraitCollection(preferredContentSizeCategory: .extraSmall))
+			return UITraitCollection(preferredContentSizeCategory: .extraSmall)
 		case .small:
-			return TraitCondition(traitCollection: UITraitCollection(preferredContentSizeCategory: .small))
+			return UITraitCollection(preferredContentSizeCategory: .small)
 		case .medium:
-			return TraitCondition(traitCollection: UITraitCollection(preferredContentSizeCategory: .medium))
+			return UITraitCollection(preferredContentSizeCategory: .medium)
 		case .large:
-			return TraitCondition(traitCollection: UITraitCollection(preferredContentSizeCategory: .large))
+			return UITraitCollection(preferredContentSizeCategory: .large)
 		case .extraLarge:
-			return TraitCondition(traitCollection: UITraitCollection(preferredContentSizeCategory: .extraLarge))
+			return UITraitCollection(preferredContentSizeCategory: .extraLarge)
 		case .extraExtraLarge:
-			return TraitCondition(traitCollection: UITraitCollection(preferredContentSizeCategory: .extraExtraLarge))
+			return UITraitCollection(preferredContentSizeCategory: .extraExtraLarge)
 		case .extraExtraExtraLarge:
-			return TraitCondition(traitCollection: UITraitCollection(preferredContentSizeCategory: .extraExtraExtraLarge))
+			return UITraitCollection(preferredContentSizeCategory: .extraExtraExtraLarge)
 		case .accessibilityMedium:
-			return TraitCondition(traitCollection: UITraitCollection(preferredContentSizeCategory: .accessibilityMedium))
+			return UITraitCollection(preferredContentSizeCategory: .accessibilityMedium)
 		case .accessibilityLarge:
-			return TraitCondition(traitCollection: UITraitCollection(preferredContentSizeCategory: .accessibilityLarge))
+			return UITraitCollection(preferredContentSizeCategory: .accessibilityLarge)
 		case .accessibilityExtraLarge:
-			return TraitCondition(traitCollection: UITraitCollection(preferredContentSizeCategory: .accessibilityExtraLarge))
+			return UITraitCollection(preferredContentSizeCategory: .accessibilityExtraLarge)
 		case .accessibilityExtraExtraLarge:
-			return TraitCondition(traitCollection: UITraitCollection(preferredContentSizeCategory: .accessibilityExtraExtraLarge))
+			return UITraitCollection(preferredContentSizeCategory: .accessibilityExtraExtraLarge)
 		case .accessibilityExtraExtraExtraLarge:
-			return TraitCondition(traitCollection: UITraitCollection(preferredContentSizeCategory: .accessibilityExtraExtraExtraLarge))
+			return UITraitCollection(preferredContentSizeCategory: .accessibilityExtraExtraExtraLarge)
 		}
 	}
 	

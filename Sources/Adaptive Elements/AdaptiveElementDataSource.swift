@@ -1,8 +1,8 @@
 //
-//  Idiom.swift
+//  AdaptiveElementDataSource.swift
 //  KELayoutKit
 //
-//  Created by Kai Engelhardt on 26.08.18
+//  Created by Kai Engelhardt on 03.10.18
 //  Copyright © 2018 Kai Engelhardt. All rights reserved.
 //
 //  Distributed under the permissive MIT license
@@ -29,26 +29,52 @@
 //  SOFTWARE.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 
-public enum Idiom: TraitAttribute {
+#elseif canImport(AppKit)
+
+import AppKit
+
+#endif
+
+public protocol AdaptiveElementDataSource: AnyObject {
 	
-	case phone
-	case pad
-	case tv
-	case carPlay
+	#if canImport(UIKit)
 	
-	public func generateCondition() -> TraitCondition {
-		switch self {
-		case .phone:
-			return TraitCondition(traitCollection: UITraitCollection(userInterfaceIdiom: .phone))
-		case .pad:
-			return TraitCondition(traitCollection: UITraitCollection(userInterfaceIdiom: .pad))
-		case .tv:
-			return TraitCondition(traitCollection: UITraitCollection(userInterfaceIdiom: .tv))
-		case .carPlay:
-			return TraitCondition(traitCollection: UITraitCollection(userInterfaceIdiom: .carPlay))
-		}
+	var traitCollection: UITraitCollection { get }
+	
+	#endif
+	
+	var bounds: CGRect { get }
+	
+}
+
+#if canImport(UIKit)
+
+extension UIViewController: AdaptiveElementDataSource {
+	
+	public var bounds: CGRect {
+		return view.bounds
 	}
 	
 }
+
+extension UIView: AdaptiveElementDataSource {}
+
+#endif
+
+#if canImport(AppKit)
+
+extension NSViewController: AdaptiveElementDataSource {
+	
+	public var bounds: CGRect {
+		return view.bounds
+	}
+	
+}
+
+extension NSView: AdaptiveElementDataSource {}
+
+#endif

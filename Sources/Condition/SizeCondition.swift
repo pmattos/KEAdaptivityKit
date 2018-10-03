@@ -31,11 +31,13 @@
 
 import CoreGraphics
 
-public struct SizeCondition {
+public struct SizeCondition: AdaptiveCondition {
 	
 	public let sizeAttributeCollection: [SizeAttribute]
 	
-	public func evaluate(with size: CGSize) -> Bool {
+	public func evaluate(with dataSource: AdaptiveElementDataSource) -> Bool {
+		let size = dataSource.bounds.size
+		
 		func evaluate(sizeAttribute: SizeAttribute) -> Bool {
 			switch sizeAttribute {
 			case .lessThan(.width, let width):

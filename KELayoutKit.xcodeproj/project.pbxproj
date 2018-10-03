@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E301E532164C98300C6C316 /* AdaptiveElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E301E522164C98300C6C316 /* AdaptiveElement.swift */; };
+		5E301E542164C98800C6C316 /* AdaptiveElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E301E522164C98300C6C316 /* AdaptiveElement.swift */; };
+		5E301E552164C98800C6C316 /* AdaptiveElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E301E522164C98300C6C316 /* AdaptiveElement.swift */; };
+		5E301E572164C9EC00C6C316 /* AdaptiveElementDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E301E562164C9EC00C6C316 /* AdaptiveElementDataSource.swift */; };
+		5E301E582164CD9D00C6C316 /* AdaptiveElementDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E301E562164C9EC00C6C316 /* AdaptiveElementDataSource.swift */; };
+		5E301E592164CD9D00C6C316 /* AdaptiveElementDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E301E562164C9EC00C6C316 /* AdaptiveElementDataSource.swift */; };
+		5E301E5B2164CE3500C6C316 /* AdaptiveCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E301E5A2164CE3500C6C316 /* AdaptiveCondition.swift */; };
+		5E301E5C2164CE3500C6C316 /* AdaptiveCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E301E5A2164CE3500C6C316 /* AdaptiveCondition.swift */; };
+		5E301E5D2164CE3500C6C316 /* AdaptiveCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E301E5A2164CE3500C6C316 /* AdaptiveCondition.swift */; };
+		5E301E5F2164D27A00C6C316 /* CompundCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E301E5E2164D27A00C6C316 /* CompundCondition.swift */; };
+		5E301E602164D27A00C6C316 /* CompundCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E301E5E2164D27A00C6C316 /* CompundCondition.swift */; };
+		5E301E612164D27A00C6C316 /* CompundCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E301E5E2164D27A00C6C316 /* CompundCondition.swift */; };
+		5E301E632164D60600C6C316 /* AdaptiveConstraintContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E301E622164D60600C6C316 /* AdaptiveConstraintContainer.swift */; };
+		5E301E642164D60600C6C316 /* AdaptiveConstraintContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E301E622164D60600C6C316 /* AdaptiveConstraintContainer.swift */; };
+		5E301E652164D60600C6C316 /* AdaptiveConstraintContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E301E622164D60600C6C316 /* AdaptiveConstraintContainer.swift */; };
+		5E301E672164FEE300C6C316 /* TraitAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E301E662164FEE300C6C316 /* TraitAttribute.swift */; };
+		5E301E682164FEE300C6C316 /* TraitAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E301E662164FEE300C6C316 /* TraitAttribute.swift */; };
+		5E301E6B216504BF00C6C316 /* AdaptiveBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E301E6A216504BF00C6C316 /* AdaptiveBehavior.swift */; };
+		5E301E6C216504BF00C6C316 /* AdaptiveBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E301E6A216504BF00C6C316 /* AdaptiveBehavior.swift */; };
+		5E301E6D216504BF00C6C316 /* AdaptiveBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E301E6A216504BF00C6C316 /* AdaptiveBehavior.swift */; };
+		5E301E6E2165234E00C6C316 /* SizeAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCBA2132EF7900F97E90 /* SizeAttribute.swift */; };
+		5E301E6F2165236200C6C316 /* AdaptiveAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCBE2132F42D00F97E90 /* AdaptiveAttribute.swift */; };
 		5E5DCC7C2132D51E00F97E90 /* KELayoutKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E5DCC7A2132D51E00F97E90 /* KELayoutKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E5DCC9D2132D5CE00F97E90 /* KELayoutKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E5DCC7A2132D51E00F97E90 /* KELayoutKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E5DCC9E2132D5CF00F97E90 /* KELayoutKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E5DCC7A2132D51E00F97E90 /* KELayoutKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -20,9 +42,8 @@
 		5E5DCCB92132DED200F97E90 /* SizeCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCB62132DED200F97E90 /* SizeCondition.swift */; };
 		5E5DCCBB2132EF7900F97E90 /* SizeAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCBA2132EF7900F97E90 /* SizeAttribute.swift */; };
 		5E5DCCBC2132EF7900F97E90 /* SizeAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCBA2132EF7900F97E90 /* SizeAttribute.swift */; };
-		5E5DCCBD2132EF7900F97E90 /* SizeAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCBA2132EF7900F97E90 /* SizeAttribute.swift */; };
-		5E5DCCBF2132F42D00F97E90 /* TraitAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCBE2132F42D00F97E90 /* TraitAttribute.swift */; };
-		5E5DCCC02132F42D00F97E90 /* TraitAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCBE2132F42D00F97E90 /* TraitAttribute.swift */; };
+		5E5DCCBF2132F42D00F97E90 /* AdaptiveAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCBE2132F42D00F97E90 /* AdaptiveAttribute.swift */; };
+		5E5DCCC02132F42D00F97E90 /* AdaptiveAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCBE2132F42D00F97E90 /* AdaptiveAttribute.swift */; };
 		5E5DCCC32132F50E00F97E90 /* SizeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCC22132F50E00F97E90 /* SizeClass.swift */; };
 		5E5DCCC42132F50E00F97E90 /* SizeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCC22132F50E00F97E90 /* SizeClass.swift */; };
 		5E5DCCC62132F60600F97E90 /* Idiom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCC52132F60600F97E90 /* Idiom.swift */; };
@@ -37,16 +58,6 @@
 		5E5DCCD52132FAE800F97E90 /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCD32132FAE800F97E90 /* Scale.swift */; };
 		5E5DCCD72132FB6D00F97E90 /* SizeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCD62132FB6D00F97E90 /* SizeCategory.swift */; };
 		5E5DCCD82132FB6D00F97E90 /* SizeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCD62132FB6D00F97E90 /* SizeCategory.swift */; };
-		5E5DCCDD21330CD700F97E90 /* TraitAdaptiveConstraintContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCDC21330CD700F97E90 /* TraitAdaptiveConstraintContainer.swift */; };
-		5E5DCCDE21330CD700F97E90 /* TraitAdaptiveConstraintContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCDC21330CD700F97E90 /* TraitAdaptiveConstraintContainer.swift */; };
-		5E5DCCEB213314A900F97E90 /* SizeAdaptiveConstraintContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCEA213314A900F97E90 /* SizeAdaptiveConstraintContainer.swift */; };
-		5E5DCCEC213314A900F97E90 /* SizeAdaptiveConstraintContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCEA213314A900F97E90 /* SizeAdaptiveConstraintContainer.swift */; };
-		5E5DCCED213314A900F97E90 /* SizeAdaptiveConstraintContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCEA213314A900F97E90 /* SizeAdaptiveConstraintContainer.swift */; };
-		5E5DCCEF21331A6400F97E90 /* TraitAdaptiveElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCEE21331A6400F97E90 /* TraitAdaptiveElement.swift */; };
-		5E5DCCF021331A6400F97E90 /* TraitAdaptiveElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCEE21331A6400F97E90 /* TraitAdaptiveElement.swift */; };
-		5E5DCCF321331D6300F97E90 /* SizeAdaptiveElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCF221331D6300F97E90 /* SizeAdaptiveElement.swift */; };
-		5E5DCCF421331D6300F97E90 /* SizeAdaptiveElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCF221331D6300F97E90 /* SizeAdaptiveElement.swift */; };
-		5E5DCCF521331D6300F97E90 /* SizeAdaptiveElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCF221331D6300F97E90 /* SizeAdaptiveElement.swift */; };
 		5E5DCCFD21333E3700F97E90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DCCFC21333E3700F97E90 /* AppDelegate.swift */; };
 		5E5DCCFF21333E3900F97E90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E5DCCFE21333E3900F97E90 /* Assets.xcassets */; };
 		5E5DCD0221333E3900F97E90 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5DCD0021333E3900F97E90 /* MainMenu.xib */; };
@@ -80,6 +91,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5E301E522164C98300C6C316 /* AdaptiveElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveElement.swift; sourceTree = "<group>"; };
+		5E301E562164C9EC00C6C316 /* AdaptiveElementDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveElementDataSource.swift; sourceTree = "<group>"; };
+		5E301E5A2164CE3500C6C316 /* AdaptiveCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveCondition.swift; sourceTree = "<group>"; };
+		5E301E5E2164D27A00C6C316 /* CompundCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompundCondition.swift; sourceTree = "<group>"; };
+		5E301E622164D60600C6C316 /* AdaptiveConstraintContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveConstraintContainer.swift; sourceTree = "<group>"; };
+		5E301E662164FEE300C6C316 /* TraitAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitAttribute.swift; sourceTree = "<group>"; };
+		5E301E6A216504BF00C6C316 /* AdaptiveBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveBehavior.swift; sourceTree = "<group>"; };
 		5E5DCC772132D51E00F97E90 /* KELayoutKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KELayoutKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E5DCC7A2132D51E00F97E90 /* KELayoutKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KELayoutKit.h; sourceTree = "<group>"; };
 		5E5DCC7B2132D51E00F97E90 /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
@@ -91,7 +109,7 @@
 		5E5DCCB22132DEC900F97E90 /* TraitCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitCondition.swift; sourceTree = "<group>"; };
 		5E5DCCB62132DED200F97E90 /* SizeCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeCondition.swift; sourceTree = "<group>"; };
 		5E5DCCBA2132EF7900F97E90 /* SizeAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeAttribute.swift; sourceTree = "<group>"; };
-		5E5DCCBE2132F42D00F97E90 /* TraitAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitAttribute.swift; sourceTree = "<group>"; };
+		5E5DCCBE2132F42D00F97E90 /* AdaptiveAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveAttribute.swift; sourceTree = "<group>"; };
 		5E5DCCC22132F50E00F97E90 /* SizeClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeClass.swift; sourceTree = "<group>"; };
 		5E5DCCC52132F60600F97E90 /* Idiom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idiom.swift; sourceTree = "<group>"; };
 		5E5DCCCA2132F9DD00F97E90 /* DisplayGamut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayGamut.swift; sourceTree = "<group>"; };
@@ -99,10 +117,6 @@
 		5E5DCCD02132FAA000F97E90 /* LayoutDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutDirection.swift; sourceTree = "<group>"; };
 		5E5DCCD32132FAE800F97E90 /* Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scale.swift; sourceTree = "<group>"; };
 		5E5DCCD62132FB6D00F97E90 /* SizeCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeCategory.swift; sourceTree = "<group>"; };
-		5E5DCCDC21330CD700F97E90 /* TraitAdaptiveConstraintContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitAdaptiveConstraintContainer.swift; sourceTree = "<group>"; };
-		5E5DCCEA213314A900F97E90 /* SizeAdaptiveConstraintContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeAdaptiveConstraintContainer.swift; sourceTree = "<group>"; };
-		5E5DCCEE21331A6400F97E90 /* TraitAdaptiveElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitAdaptiveElement.swift; sourceTree = "<group>"; };
-		5E5DCCF221331D6300F97E90 /* SizeAdaptiveElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeAdaptiveElement.swift; sourceTree = "<group>"; };
 		5E5DCCFA21333E3700F97E90 /* KELayoutKit macOS Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KELayoutKit macOS Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E5DCCFC21333E3700F97E90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E5DCCFE21333E3900F97E90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -182,8 +196,8 @@
 			children = (
 				5E5DCCAB2132DCC900F97E90 /* AdaptiveInterface.swift */,
 				5E5DCCAF2132DD1600F97E90 /* Adaptive Elements */,
-				5E5DCCB02132DD1C00F97E90 /* Attributes */,
 				5E5DCCB12132DD2400F97E90 /* Condition */,
+				5E5DCCB02132DD1C00F97E90 /* Attributes */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -191,10 +205,10 @@
 		5E5DCCAF2132DD1600F97E90 /* Adaptive Elements */ = {
 			isa = PBXGroup;
 			children = (
-				5E5DCCEE21331A6400F97E90 /* TraitAdaptiveElement.swift */,
-				5E5DCCF221331D6300F97E90 /* SizeAdaptiveElement.swift */,
-				5E5DCCDC21330CD700F97E90 /* TraitAdaptiveConstraintContainer.swift */,
-				5E5DCCEA213314A900F97E90 /* SizeAdaptiveConstraintContainer.swift */,
+				5E301E522164C98300C6C316 /* AdaptiveElement.swift */,
+				5E301E622164D60600C6C316 /* AdaptiveConstraintContainer.swift */,
+				5E301E6A216504BF00C6C316 /* AdaptiveBehavior.swift */,
+				5E301E562164C9EC00C6C316 /* AdaptiveElementDataSource.swift */,
 			);
 			path = "Adaptive Elements";
 			sourceTree = "<group>";
@@ -202,25 +216,8 @@
 		5E5DCCB02132DD1C00F97E90 /* Attributes */ = {
 			isa = PBXGroup;
 			children = (
-				5E5DCCC82132F9AA00F97E90 /* Trait Atrributes */,
-				5E5DCCC92132F9B500F97E90 /* Size Attributes */,
-			);
-			path = Attributes;
-			sourceTree = "<group>";
-		};
-		5E5DCCB12132DD2400F97E90 /* Condition */ = {
-			isa = PBXGroup;
-			children = (
-				5E5DCCB22132DEC900F97E90 /* TraitCondition.swift */,
-				5E5DCCB62132DED200F97E90 /* SizeCondition.swift */,
-			);
-			path = Condition;
-			sourceTree = "<group>";
-		};
-		5E5DCCC82132F9AA00F97E90 /* Trait Atrributes */ = {
-			isa = PBXGroup;
-			children = (
-				5E5DCCBE2132F42D00F97E90 /* TraitAttribute.swift */,
+				5E5DCCBE2132F42D00F97E90 /* AdaptiveAttribute.swift */,
+				5E301E662164FEE300C6C316 /* TraitAttribute.swift */,
 				5E5DCCC22132F50E00F97E90 /* SizeClass.swift */,
 				5E5DCCC52132F60600F97E90 /* Idiom.swift */,
 				5E5DCCCA2132F9DD00F97E90 /* DisplayGamut.swift */,
@@ -228,16 +225,20 @@
 				5E5DCCD02132FAA000F97E90 /* LayoutDirection.swift */,
 				5E5DCCD32132FAE800F97E90 /* Scale.swift */,
 				5E5DCCD62132FB6D00F97E90 /* SizeCategory.swift */,
-			);
-			path = "Trait Atrributes";
-			sourceTree = "<group>";
-		};
-		5E5DCCC92132F9B500F97E90 /* Size Attributes */ = {
-			isa = PBXGroup;
-			children = (
 				5E5DCCBA2132EF7900F97E90 /* SizeAttribute.swift */,
 			);
-			path = "Size Attributes";
+			path = Attributes;
+			sourceTree = "<group>";
+		};
+		5E5DCCB12132DD2400F97E90 /* Condition */ = {
+			isa = PBXGroup;
+			children = (
+				5E301E5A2164CE3500C6C316 /* AdaptiveCondition.swift */,
+				5E5DCCB22132DEC900F97E90 /* TraitCondition.swift */,
+				5E5DCCB62132DED200F97E90 /* SizeCondition.swift */,
+				5E301E5E2164D27A00C6C316 /* CompundCondition.swift */,
+			);
+			path = Condition;
 			sourceTree = "<group>";
 		};
 		5E5DCCFB21333E3700F97E90 /* KELayoutKit macOS Test */ = {
@@ -443,21 +444,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E5DCCCE2132FA5500F97E90 /* ForceTouch.swift in Sources */,
-				5E5DCCDD21330CD700F97E90 /* TraitAdaptiveConstraintContainer.swift in Sources */,
-				5E5DCCEB213314A900F97E90 /* SizeAdaptiveConstraintContainer.swift in Sources */,
+				5E301E5B2164CE3500C6C316 /* AdaptiveCondition.swift in Sources */,
 				5E5DCCC32132F50E00F97E90 /* SizeClass.swift in Sources */,
 				5E5DCCC62132F60600F97E90 /* Idiom.swift in Sources */,
 				5E5DCCD42132FAE800F97E90 /* Scale.swift in Sources */,
-				5E5DCCF321331D6300F97E90 /* SizeAdaptiveElement.swift in Sources */,
 				5E5DCCBB2132EF7900F97E90 /* SizeAttribute.swift in Sources */,
-				5E5DCCBF2132F42D00F97E90 /* TraitAttribute.swift in Sources */,
+				5E5DCCBF2132F42D00F97E90 /* AdaptiveAttribute.swift in Sources */,
+				5E301E632164D60600C6C316 /* AdaptiveConstraintContainer.swift in Sources */,
+				5E301E532164C98300C6C316 /* AdaptiveElement.swift in Sources */,
 				5E5DCCAC2132DCC900F97E90 /* AdaptiveInterface.swift in Sources */,
 				5E5DCCB32132DEC900F97E90 /* TraitCondition.swift in Sources */,
 				5E5DCCCB2132F9DD00F97E90 /* DisplayGamut.swift in Sources */,
+				5E301E6B216504BF00C6C316 /* AdaptiveBehavior.swift in Sources */,
+				5E301E5F2164D27A00C6C316 /* CompundCondition.swift in Sources */,
+				5E301E672164FEE300C6C316 /* TraitAttribute.swift in Sources */,
 				5E5DCCD72132FB6D00F97E90 /* SizeCategory.swift in Sources */,
 				5E5DCCD12132FAA000F97E90 /* LayoutDirection.swift in Sources */,
 				5E5DCCB72132DED200F97E90 /* SizeCondition.swift in Sources */,
-				5E5DCCEF21331A6400F97E90 /* TraitAdaptiveElement.swift in Sources */,
+				5E301E572164C9EC00C6C316 /* AdaptiveElementDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,21 +470,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E5DCCCF2132FA5500F97E90 /* ForceTouch.swift in Sources */,
-				5E5DCCDE21330CD700F97E90 /* TraitAdaptiveConstraintContainer.swift in Sources */,
-				5E5DCCEC213314A900F97E90 /* SizeAdaptiveConstraintContainer.swift in Sources */,
+				5E301E5C2164CE3500C6C316 /* AdaptiveCondition.swift in Sources */,
 				5E5DCCC42132F50E00F97E90 /* SizeClass.swift in Sources */,
 				5E5DCCC72132F60600F97E90 /* Idiom.swift in Sources */,
 				5E5DCCD52132FAE800F97E90 /* Scale.swift in Sources */,
-				5E5DCCF421331D6300F97E90 /* SizeAdaptiveElement.swift in Sources */,
 				5E5DCCBC2132EF7900F97E90 /* SizeAttribute.swift in Sources */,
-				5E5DCCC02132F42D00F97E90 /* TraitAttribute.swift in Sources */,
+				5E5DCCC02132F42D00F97E90 /* AdaptiveAttribute.swift in Sources */,
+				5E301E642164D60600C6C316 /* AdaptiveConstraintContainer.swift in Sources */,
+				5E301E542164C98800C6C316 /* AdaptiveElement.swift in Sources */,
 				5E5DCCAD2132DCC900F97E90 /* AdaptiveInterface.swift in Sources */,
 				5E5DCCB42132DEC900F97E90 /* TraitCondition.swift in Sources */,
 				5E5DCCCC2132F9DD00F97E90 /* DisplayGamut.swift in Sources */,
+				5E301E6C216504BF00C6C316 /* AdaptiveBehavior.swift in Sources */,
+				5E301E602164D27A00C6C316 /* CompundCondition.swift in Sources */,
+				5E301E682164FEE300C6C316 /* TraitAttribute.swift in Sources */,
 				5E5DCCD82132FB6D00F97E90 /* SizeCategory.swift in Sources */,
 				5E5DCCD22132FAA000F97E90 /* LayoutDirection.swift in Sources */,
 				5E5DCCB82132DED200F97E90 /* SizeCondition.swift in Sources */,
-				5E5DCCF021331A6400F97E90 /* TraitAdaptiveElement.swift in Sources */,
+				5E301E582164CD9D00C6C316 /* AdaptiveElementDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,11 +495,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E5DCCED213314A900F97E90 /* SizeAdaptiveConstraintContainer.swift in Sources */,
+				5E301E6F2165236200C6C316 /* AdaptiveAttribute.swift in Sources */,
+				5E301E592164CD9D00C6C316 /* AdaptiveElementDataSource.swift in Sources */,
+				5E301E552164C98800C6C316 /* AdaptiveElement.swift in Sources */,
 				5E5DCCAE2132DCC900F97E90 /* AdaptiveInterface.swift in Sources */,
 				5E5DCCB92132DED200F97E90 /* SizeCondition.swift in Sources */,
-				5E5DCCF521331D6300F97E90 /* SizeAdaptiveElement.swift in Sources */,
-				5E5DCCBD2132EF7900F97E90 /* SizeAttribute.swift in Sources */,
+				5E301E5D2164CE3500C6C316 /* AdaptiveCondition.swift in Sources */,
+				5E301E652164D60600C6C316 /* AdaptiveConstraintContainer.swift in Sources */,
+				5E301E612164D27A00C6C316 /* CompundCondition.swift in Sources */,
+				5E301E6D216504BF00C6C316 /* AdaptiveBehavior.swift in Sources */,
+				5E301E6E2165234E00C6C316 /* SizeAttribute.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

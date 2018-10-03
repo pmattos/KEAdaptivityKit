@@ -1,5 +1,5 @@
 //
-//  SizeClass.swift
+//  Idiom.swift
 //  KELayoutKit
 //
 //  Created by Kai Engelhardt on 26.08.18
@@ -31,23 +31,23 @@
 
 import UIKit
 
-public enum SizeClass: TraitAttribute {
+public enum Idiom: TraitAttribute {
 	
-	case horizontalCompact
-	case horizontalRegular
-	case verticalCompact
-	case verticalRegular
+	case phone
+	case pad
+	case tv
+	case carPlay
 	
-	public func generateCondition() -> TraitCondition {
+	public var traitCollection: UITraitCollection {
 		switch self {
-		case .horizontalCompact:
-			return TraitCondition(traitCollection: UITraitCollection(horizontalSizeClass: .compact))
-		case .horizontalRegular:
-			return TraitCondition(traitCollection: UITraitCollection(horizontalSizeClass: .regular))
-		case .verticalCompact:
-			return TraitCondition(traitCollection: UITraitCollection(verticalSizeClass: .compact))
-		case .verticalRegular:
-			return TraitCondition(traitCollection: UITraitCollection(verticalSizeClass: .regular))
+		case .phone:
+			return UITraitCollection(userInterfaceIdiom: .phone)
+		case .pad:
+			return UITraitCollection(userInterfaceIdiom: .pad)
+		case .tv:
+			return UITraitCollection(userInterfaceIdiom: .tv)
+		case .carPlay:
+			return UITraitCollection(userInterfaceIdiom: .carPlay)
 		}
 	}
 	

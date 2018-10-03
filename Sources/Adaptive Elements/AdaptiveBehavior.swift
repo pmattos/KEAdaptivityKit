@@ -1,8 +1,8 @@
 //
-//  DisplayGamut.swift
+//  AdaptiveBehavior.swift
 //  KELayoutKit
 //
-//  Created by Kai Engelhardt on 26.08.18
+//  Created by Kai Engelhardt on 03.10.18
 //  Copyright © 2018 Kai Engelhardt. All rights reserved.
 //
 //  Distributed under the permissive MIT license
@@ -29,19 +29,44 @@
 //  SOFTWARE.
 //
 
+
+#if canImport(UIKit)
+
 import UIKit
 
-public enum DisplayGamut: TraitAttribute {
+#elseif canImport(AppKit)
+
+import AppKit
+
+#endif
+
+public struct AdaptiveBehavior: AdaptiveElement {
 	
-	case SRGB
-	case P3
+	public typealias Behavior = () -> Void
 	
-	public func generateCondition() -> TraitCondition {
-		switch self {
-		case .SRGB:
-			return TraitCondition(traitCollection: UITraitCollection(displayGamut: .SRGB))
-		case .P3:
-			return TraitCondition(traitCollection: UITraitCollection(displayGamut: .P3))
+	public let conditions: [AdaptiveCondition]
+	public let behavior: Behavior
+	public let counterBehavior: Behavior?
+	
+	private var lastEvaluation: Bool?
+	
+	public init(conditions: [AdaptiveCondition], behavior: @escaping Behavior, counterBehavior: Behavior?) {
+		self.conditions = conditions
+		self.behavior = behavior
+		self.counterBehavior = counterBehavior
+	}
+	
+	public mutating func update(with dataSource: AdaptiveElementDataSource) {
+		let evaluation = conditions.evaluate(with: dataSource)
+		guard evaluation != lastEvaluation else {
+			return
+		}
+		lastEvaluation = evaluation
+		
+		if evaluation {
+			behavior()
+		} else {
+			counterBehavior?()
 		}
 	}
 	

@@ -1,5 +1,5 @@
 //
-//  ForceTouch.swift
+//  LayoutDirection.swift
 //  KELayoutKit
 //
 //  Created by Kai Engelhardt on 26.08.18
@@ -31,17 +31,17 @@
 
 import UIKit
 
-public enum ForceTouch: TraitAttribute {
+public enum LayoutDirection: TraitAttribute {
 	
-	case unavailable
-	case available
+	case leftToRight
+	case rightToLeft
 	
-	public func generateCondition() -> TraitCondition {
+	public var traitCollection: UITraitCollection {
 		switch self {
-		case .unavailable:
-			return TraitCondition(traitCollection: UITraitCollection(forceTouchCapability: .unavailable))
-		case .available:
-			return TraitCondition(traitCollection: UITraitCollection(forceTouchCapability: .available))
+		case .leftToRight:
+			return UITraitCollection(layoutDirection: .leftToRight)
+		case .rightToLeft:
+			return UITraitCollection(layoutDirection: .rightToLeft)
 		}
 	}
 	

@@ -1,5 +1,5 @@
 //
-//  LayoutDirection.swift
+//  Scale.swift
 //  KELayoutKit
 //
 //  Created by Kai Engelhardt on 26.08.18
@@ -31,17 +31,23 @@
 
 import UIKit
 
-public enum LayoutDirection: TraitAttribute {
+public enum Scale: TraitAttribute {
 	
-	case leftToRight
-	case rightToLeft
+	case oneX
+	case twoX
+	case threeX
+	case fourX
 	
-	public func generateCondition() -> TraitCondition {
+	public var traitCollection: UITraitCollection {
 		switch self {
-		case .leftToRight:
-			return TraitCondition(traitCollection: UITraitCollection(layoutDirection: .leftToRight))
-		case .rightToLeft:
-			return TraitCondition(traitCollection: UITraitCollection(layoutDirection: .rightToLeft))
+		case .oneX:
+			return UITraitCollection(displayScale: 1.0)
+		case .twoX:
+			return UITraitCollection(displayScale: 2.0)
+		case .threeX:
+			return UITraitCollection(displayScale: 3.0)
+		case .fourX:
+			return UITraitCollection(displayScale: 4.0)
 		}
 	}
 	

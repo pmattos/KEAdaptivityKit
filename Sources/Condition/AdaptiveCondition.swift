@@ -1,8 +1,8 @@
 //
-//  AdaptiveInterface.swift
+//  AdaptiveCondition.swift
 //  KELayoutKit
 //
-//  Created by Kai Engelhardt on 26.08.18
+//  Created by Kai Engelhardt on 03.10.18
 //  Copyright © 2018 Kai Engelhardt. All rights reserved.
 //
 //  Distributed under the permissive MIT license
@@ -39,34 +39,18 @@ import AppKit
 
 #endif
 
-public protocol AdaptiveInterface: AnyObject, AdaptiveElement {
+public protocol AdaptiveCondition {
 	
-	var adaptiveElements: [AdaptiveElement] { get set }
+	func evaluate(with dataSource: AdaptiveElementDataSource) -> Bool
 	
 }
 
-public extension AdaptiveInterface {
+public extension Array where Element == AdaptiveCondition {
 	
-	public func update(with dataSource: AdaptiveElementDataSource) {
-		for i in 0 ..< adaptiveElements.count {
-			adaptiveElements[i].update(with: dataSource)
+	public func evaluate(with dataSource: AdaptiveElementDataSource) -> Bool {
+		return reduce(true) { result, element in
+			result && element.evaluate(with: dataSource)
 		}
-	}
-	
-}
-
-public extension AdaptiveInterface {
-	
-	public func when(_ attributes: [AdaptiveAttribute], apply constraints: [NSLayoutConstraint]) {
-		let condition = CompoundCondition.init(conditions: attributes.map { $0.generateCondition() })
-		let element = AdaptiveConstraintContainer.init(conditions: [condition], constraints: constraints)
-		adaptiveElements.append(element)
-	}
-	
-	public func when(_ attributes: [AdaptiveAttribute], do behavior: @escaping AdaptiveBehavior.Behavior, otherwise counterBehavior: AdaptiveBehavior.Behavior? = nil) {
-		let condition = CompoundCondition.init(conditions: attributes.map { $0.generateCondition() })
-		let element = AdaptiveBehavior(conditions: [condition], behavior: behavior, counterBehavior: counterBehavior)
-		adaptiveElements.append(element)
 	}
 	
 }

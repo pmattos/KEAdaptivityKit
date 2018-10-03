@@ -1,8 +1,8 @@
 //
-//  TraitAdaptiveConstraintContainer.swift
+//  AdaptiveConstraintContainer.swift
 //  KELayoutKit
 //
-//  Created by Kai Engelhardt on 26.08.18
+//  Created by Kai Engelhardt on 03.10.18
 //  Copyright © 2018 Kai Engelhardt. All rights reserved.
 //
 //  Distributed under the permissive MIT license
@@ -29,15 +29,36 @@
 //  SOFTWARE.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 
-public struct TraitAdaptiveConstraintContainer: TraitAdaptiveElement {
+#elseif canImport(AppKit)
+
+import AppKit
+
+#endif
+
+public struct AdaptiveConstraintContainer: AdaptiveElement {
 	
-	public var condition: TraitCondition
+	public let conditions: [AdaptiveCondition]
 	public let constraints: [NSLayoutConstraint]
 	
-	public func update(with newTraitCollection: UITraitCollection) {
-		if condition.evaluate(with: newTraitCollection) {
+	private var lastEvaluation: Bool?
+	
+	init(conditions: [AdaptiveCondition], constraints: [NSLayoutConstraint]) {
+		self.conditions = conditions
+		self.constraints = constraints
+	}
+	
+	public mutating func update(with dataSource: AdaptiveElementDataSource) {
+		let evaluation = conditions.evaluate(with: dataSource)
+		guard evaluation != lastEvaluation else {
+			return
+		}
+		lastEvaluation = evaluation
+		
+		if conditions.evaluate(with: dataSource) {
 			NSLayoutConstraint.activate(constraints)
 		} else {
 			NSLayoutConstraint.deactivate(constraints)
