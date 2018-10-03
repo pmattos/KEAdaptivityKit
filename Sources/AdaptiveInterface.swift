@@ -40,7 +40,7 @@ import AppKit
 
 #endif
 
-public protocol AdaptiveInterface: AnyObject, AdaptiveElement {
+public protocol AdaptiveInterface: AnyObject {
 	
 	var adaptiveElements: [AdaptiveElement] { get set }
 	
@@ -50,7 +50,14 @@ public extension AdaptiveInterface {
 	
 	public func update(with dataSource: AdaptiveElementDataSource) {
 		for i in 0 ..< adaptiveElements.count {
-			adaptiveElements[i].update(with: dataSource)
+			if adaptiveElements[i].conditions.evaluate(with: dataSource) == false {
+				adaptiveElements[i].update(with: dataSource)
+			}
+		}
+		for i in 0 ..< adaptiveElements.count {
+			if adaptiveElements[i].conditions.evaluate(with: dataSource) == true {
+				adaptiveElements[i].update(with: dataSource)
+			}
 		}
 	}
 	

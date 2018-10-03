@@ -33,7 +33,9 @@
 import Foundation
 
 public protocol AdaptiveElement {
-		
+	
+	var conditions: [AdaptiveCondition] { get }
+	
 	mutating func update(with dataSource: AdaptiveElementDataSource)
 	
 }
