@@ -1,6 +1,6 @@
 //
 //  SizeAttribute.swift
-//  KELayoutKit
+//  KEAdaptivityKit
 //
 //  Created by Kai Engelhardt on 25.08.18
 //  Copyright © 2018 Kai Engelhardt. All rights reserved.

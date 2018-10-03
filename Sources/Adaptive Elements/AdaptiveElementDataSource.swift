@@ -1,6 +1,6 @@
 //
 //  AdaptiveElementDataSource.swift
-//  KELayoutKit
+//  KEAdaptivityKit
 //
 //  Created by Kai Engelhardt on 03.10.18
 //  Copyright © 2018 Kai Engelhardt. All rights reserved.
