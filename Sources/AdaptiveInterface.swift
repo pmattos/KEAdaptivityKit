@@ -31,24 +31,19 @@
 //
 
 #if canImport(UIKit)
-
 import UIKit
-
 #elseif canImport(AppKit)
-
 import AppKit
-
 #endif
 
 public protocol AdaptiveInterface: AnyObject {
 	
 	var adaptiveElements: [AdaptiveElement] { get set }
-	
 }
 
 public extension AdaptiveInterface {
 	
-	public func update(with dataSource: AdaptiveElementDataSource) {
+	func update(with dataSource: AdaptiveElementDataSource) {
 		for i in 0 ..< adaptiveElements.count {
 			if adaptiveElements[i].conditions.evaluate(with: dataSource) == false {
 				adaptiveElements[i].update(with: dataSource)
@@ -60,29 +55,27 @@ public extension AdaptiveInterface {
 			}
 		}
 	}
-	
 }
 
 public extension AdaptiveInterface {
 	
-	public func when(_ attribute: AdaptiveAttribute, activateConstraints constraints: [NSLayoutConstraint]) {
+	func when(_ attribute: AdaptiveAttribute, activateConstraints constraints: [NSLayoutConstraint]) {
 		when([attribute], activateConstraints: constraints)
 	}
 	
-	public func when(_ attributes: [AdaptiveAttribute], activateConstraints constraints: [NSLayoutConstraint]) {
+	func when(_ attributes: [AdaptiveAttribute], activateConstraints constraints: [NSLayoutConstraint]) {
 		let condition = CompoundCondition.init(conditions: attributes.map { $0.generateCondition() })
 		let element = AdaptiveConstraintContainer.init(conditions: [condition], constraints: constraints)
 		adaptiveElements.append(element)
 	}
 	
-	public func when(_ attribute: AdaptiveAttribute, do behavior: @escaping AdaptiveBehavior.Behavior, otherwise counterBehavior: AdaptiveBehavior.Behavior? = nil) {
+	func when(_ attribute: AdaptiveAttribute, do behavior: @escaping AdaptiveBehavior.Behavior, otherwise counterBehavior: AdaptiveBehavior.Behavior? = nil) {
 		when([attribute], do: behavior, otherwise: counterBehavior)
 	}
 	
-	public func when(_ attributes: [AdaptiveAttribute], do behavior: @escaping AdaptiveBehavior.Behavior, otherwise counterBehavior: AdaptiveBehavior.Behavior? = nil) {
+	func when(_ attributes: [AdaptiveAttribute], do behavior: @escaping AdaptiveBehavior.Behavior, otherwise counterBehavior: AdaptiveBehavior.Behavior? = nil) {
 		let condition = CompoundCondition.init(conditions: attributes.map { $0.generateCondition() })
 		let element = AdaptiveBehavior(conditions: [condition], behavior: behavior, counterBehavior: counterBehavior)
 		adaptiveElements.append(element)
 	}
-	
 }

@@ -30,27 +30,21 @@
 //
 
 #if canImport(UIKit)
-
 import UIKit
-
 #elseif canImport(AppKit)
-
 import AppKit
-
 #endif
 
 public protocol AdaptiveCondition {
 	
 	func evaluate(with dataSource: AdaptiveElementDataSource) -> Bool
-	
 }
 
 public extension Array where Element == AdaptiveCondition {
 	
-	public func evaluate(with dataSource: AdaptiveElementDataSource) -> Bool {
+	func evaluate(with dataSource: AdaptiveElementDataSource) -> Bool {
 		return reduce(true) { result, element in
 			result && element.evaluate(with: dataSource)
 		}
 	}
-	
 }

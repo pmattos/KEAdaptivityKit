@@ -34,13 +34,11 @@ import UIKit
 public protocol TraitAttribute: AdaptiveAttribute {
 	
 	var traitCollection: UITraitCollection { get }
-	
 }
 
 public extension TraitAttribute {
-	
-	public func generateCondition() -> AdaptiveCondition {
+
+    func generateCondition() -> AdaptiveCondition {
 		return TraitCondition(traitCollection: traitCollection)
 	}
-	
 }
